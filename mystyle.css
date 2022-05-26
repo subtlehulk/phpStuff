@@ -1,0 +1,73 @@
+body {
+  background-color: #ffcf03;
+  font-family: fantasy;
+  font-size: 20pt;
+  color: white;
+}
+
+.header {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dashed;
+  border-color: black;
+}
+.feedbackHeader {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.body {
+  border-style: dashed;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.login {
+  color: black ;
+  margin-top: auto;
+  height: auto;
+  width: 70%;
+  position:relative;
+  left: 60%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-right-style: dashed;
+}
+
+
+/* .userForm {
+  margin-top: auto;
+  color: black;
+} */
+
+.userDetails {
+  border-left-style: dashed;
+  border-right-style: dashed;
+  border: white;
+  margin-right: auto;
+  width: 49%;
+  display: inline-block;
+}
+
+.feed {
+  /* border-left-style: dashed;
+  border-right-style: dashed; */
+  margin-left: auto;
+  width: 49%;
+  height: auto;
+  display: inline-block;
+}
+
+.feedbackField {
+  width: 500px;
+  height: 200px;
+}

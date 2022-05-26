@@ -1,0 +1,58 @@
+<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+
+<?php
+//Setting a variable to false to check over at the end of the input
+$passwordFull = $emailFull = false;
+//these are the variables for the error messages
+$passwordErr = $emailErr = "";
+$email = $password = "";
+//defining the variables
+function logIn() {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["email"])) {
+            $emailErr = "email is required.";
+            $emailFull = false;
+        }
+        else {
+            $email = test_input($_POST["email"]);
+            $emailFull = true;
+        }
+    }
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if (empty($_POST["password"])) {
+            $passwordErr = "Password is required.";
+            $passwordFull = false;
+        }
+        else {
+            $password = test_input($_POST["password"]);
+            $passwordFull = true;
+        }
+    }
+    if ($passwordFull = $emailFull === TRUE) {
+        echo"<script type='text/javascript'>alert('Logged in succesfully!');</script>";
+    }
+}
+
+
+
+<?php
+//PHP validation on form input
+$name = $email = $gender = $feedback = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = test_input($_POST["name"]);
+    $email = test_input($_POST["email"]);
+    $gender = test_input($_POST["gender"]);
+    $feedback = test_input($_POST["feedback"]);
+
+}
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+
+}
+?>

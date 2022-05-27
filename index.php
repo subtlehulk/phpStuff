@@ -144,7 +144,7 @@ function test_input($data) {
         </div>
         </div>
     </div>
-    <div class="logo">
+    <div class="logo" alt="The logo of the London Spitfire Overwatch League team">
       <img src="https://d3lcdr963b5ubl.cloudfront.net/uploads/za12HFHb4frfRXT9EhfgREiK42vFiu3PGVZ7xCQjQC6frkoxsHGByrR80tXHHuw1.png">
     </div>
     </body>

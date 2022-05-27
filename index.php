@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="mystyle.css">
 </head>
-<body>
+<body class="main">
 
 <!--login in -->
 <?php
@@ -81,7 +81,7 @@ function test_input($data) {
     ?>
 
     <div class = "header">
-    <h1 class="feedbackHeader"> Log in / Sign Up </h1>
+            <h1 class="feedbackHeader"> Log in / Sign Up </h1>
     </div>
     <br>
     <div class="body">
@@ -95,8 +95,10 @@ function test_input($data) {
             Password: <br>
             <input type="password" name="password"></input>
             <span class="error">* <?php echo $passwordErr;?></span>
-            <br><br>
+            <br>
             <input type="submit" name="submit"></button>
+
+            <br><br><br>
         </form>
         </div>
     </div>
@@ -104,6 +106,7 @@ function test_input($data) {
     </div> -->
     <div class="feed">
         <form class = "signUp" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
+        <br>
             UserName: <input type="text" name="username">
             <span class="error">* <?php echo $userNameErr;?></span><br><br>
             name: <input type="text" name="name">
@@ -134,11 +137,15 @@ function test_input($data) {
             <br>
             <input type="text" name="answer"> 
             <span class="error">*<?php echo $answerErr;?></span><br>
-            <br><br>
+            <br>
             <input type="submit" name="submit" value="Submit">
+            <br><br>
         </form>
         </div>
         </div>
+    </div>
+    <div class="logo">
+      <img src="https://d3lcdr963b5ubl.cloudfront.net/uploads/za12HFHb4frfRXT9EhfgREiK42vFiu3PGVZ7xCQjQC6frkoxsHGByrR80tXHHuw1.png">
     </div>
     </body>
 </html>

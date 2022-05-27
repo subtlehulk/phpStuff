@@ -65,8 +65,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="mystyle.css">
   </head>
   <body>
-    <div class = "header">
-      <h1 class="feedbackHeader"><a href="index.php"> Feedback </a></h1>
+    <div class = "headerFeedback">
+      <h1 class="feedbackHeader"><a class="home" href="index.php"> Feedback </a></h1>
     </div>
     <br>
     <div class="body">
@@ -101,6 +101,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </form>
         </div>
       </div>
+    </div>
+    <div class="logo">
+      <img src="https://d3lcdr963b5ubl.cloudfront.net/uploads/za12HFHb4frfRXT9EhfgREiK42vFiu3PGVZ7xCQjQC6frkoxsHGByrR80tXHHuw1.png">
     </div>
   </body>
 </html>
